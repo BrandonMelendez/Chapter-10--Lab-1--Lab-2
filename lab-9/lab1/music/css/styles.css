@@ -1,7 +1,7 @@
 /*
 	Name: Brandon Melendez
 	File Name: styles.css
-	Date: 2/26/24
+	Date: 4/17/24
 */
 
 /*CSS Reset*/
@@ -54,7 +54,7 @@ figcaption {
 }
 
 /*Hide tab-desk class*/
-.tab-desk {
+.tab-desk, #menu-links {
     display: none;
 }
 
@@ -67,6 +67,9 @@ header {
 
 header h1 {
     font-family: "DM Serif Display" ,serif;
+    font-size: 1.5em;
+    padding: 4%;
+    margin-right: 15%;
 }
 
 /*Style rules for navigation area*/
@@ -74,24 +77,28 @@ nav {
     background-color: #373684;
 }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav li {
-    display: inline-block;
-    font-size: 2em;
-    border-top: 1px solid #e5e9fc
-}
-
-nav li a {
-    display: block;
+.mobile-nav a {
     color: #fff;
     text-align: center;
-    padding: 0.5em 1em;
+    font-size: 2em;
     text-decoration: none;
+    padding: 3%;
+    display: block;
 }
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
+}
+
 
 /*Style rules for main content*/
 main {
@@ -233,7 +240,7 @@ footer a {
     .tab-desk {
         display: block
     }
-    .mobile {
+    .mobile, .mobile-nav {
         display: none;
     }
 
@@ -242,12 +249,19 @@ footer a {
         display: inline;
     }
 
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+    }
+
     /*Tablet viewport: Style rules for nav area*/
     nav li {
         border-top: none;
         display: inline-block;
         font-size: 1.5em;
         border-right: 1px solid #e5e9fc;
+
     }
 
     nav li:last-child {
@@ -256,6 +270,15 @@ footer a {
 
     nav li a {
         padding: 0.25em 0.5em;
+        display: block;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
     }
 
     /*Tablet viewport: style rule for map*/
@@ -297,6 +320,7 @@ footer a {
     nav li a:hover {
         color: #373684;
         background: #e5e9fc;
+        transform: scale(1.2);
     }
 
     /*Desktop viewport: style rules for main content*/
