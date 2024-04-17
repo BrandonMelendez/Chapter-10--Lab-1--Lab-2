@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <!-- 	
 	Student Name: Brandon Melendez
-	File Name: index.html
+	File Name: faqs.html
 	Date: 4/17/2024
 -->
 <html lang="en">
 <head>
-    <title>Wild Rescue: Home</title>
+    <title>Wild Rescue: FAQS</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +33,8 @@
     <a class="nav-icon" onclick="hamburger()">
         <div id="icon">#9776;</div>
     </a>
-</nav>
-
+</nav>    
+    
 <header>
     <div class="tab-desk"><a href="index.html"><img src="images/baby-hawk.jpg" alt="rescued baby hawk"></a></div>
     <div class="mobile">
@@ -45,37 +45,35 @@
 
 <nav class="tab-desk">
     <ul>
-    <li>Home</li>
-    <li>About Us</li>
-    <li>Partnership</li>
-    <li>Gallery</li>
-    <li>FAQs</li>
-    <li>Contact</li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="partnership.html">Partnership</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 
 <!-- Use the main area to add the main content to the webpage -->
 <main>
-    <div id="welcome">
-        <p>Welcome to Wild Rescues. Our missions is to rescue, rehabilitate, and release wildlife back into their natural environment. We are a nonprofit organization dedicated to helping injured wildlife.</p>
 
-        <p>Our staff provides around-the-clock care for wildlife in need. We also provide long-term care for wildlife that cannot be released back into their natural environment.</p>
-
-        <p>Will you partner with us? We need caring volunteers to help care for our animals. You can also donate, become a member, or become a sponsor. Contact us today.</p>
+    <div id="questions">
+        <p onclick="ans1()">How can I determine if a baby animal is an orphan?</p>
+        <p onclick="ans2()">How can I tell if an animal has rabies?</p>
+        <p onclick="ans3()">I found a baby bird that fell from its nest. Will the parents orphan it if I touch it?</p>
+        <p onclick="ans4()">How can I volunteer?</p>
     </div>
 
-    <div id="latest">
-        <h2>Our Latest Rescue: Baby Raccoons</h2>
-
-        <img class="round" src="images/baby-raccoons.jpg" alt="hands holding three baby raccoons">
-
-        <p>Meet our latest rescues, Fizz, Bandit, and Mohawk. These three little guys were found abandoned near a home.</p>
+    <div id="answer">
+        <h2>Answer:</h2>
+        <p></p>
     </div>
+
 </main>
 
 <footer>
     <p>&copy; Copyright 2021. All Rights Reserved.</p>
-    <p>contact@wildrescues.net</p>
+    <p><a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a></p>
 </footer>
 
 </div>

@@ -1,7 +1,7 @@
 /*
 	Name: Brandon Melendez
 	File Name: styles.css
-	Date: 4/10/24
+	Date: 4/17/24
 */
 
 /*CSS Reset*/
@@ -23,13 +23,16 @@ img, video {
 
 /*Style rules for mobile viewport*/
 
+.mobile h1 {
+    margin: 2% 0 0 3%;
+}
 
 /*Style rules to show mobile class and hide tab-desk class*/
 #mobile {
  display: block;
 }
 
-.tab-desk {
+.tab-desk, #nav-links {
     display: none;
 }
 
@@ -59,26 +62,30 @@ nav {
     background-color: #2a1f14;
 }
 
-nav ul {
-    list-style-type: none;
+.mobile-nav a {
+    color: #fff;
     text-align: center;
-}
-
-nav li {
-    display: block;
-    font-size: 1.5em;
-    font-family: Geneva, Arial, sans-serif;
-    border-top-width: 0.5px;
-    color: #f6eee4;
-}
-
-nav li a {
-    display: block;
-    color: #f6eee4;
-    text-align: center;
-    padding: 0.5em 2em;
+    font-size: 2em;
     text-decoration: none;
+    padding: 3%;
+    display: block;
 }
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #2a1f14;
+}
+
 
 
 /*Style rules for main content*/
@@ -157,6 +164,21 @@ figcaption {
     margin: 0 auto;
 }
 
+#questions p {
+    cursor: pointer;
+}
+
+#answer {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#answer h2 {
+    display: none;
+}
+
 .anchor {
     color: #f6eee4;
     text-decoration: none;
@@ -210,7 +232,7 @@ footer a {
         display: block;
     }
 
-    .mobile, .mobile-tablet {
+    .mobile, .mobile-tablet, .mobile-nav {
         display: none;
     }
 
@@ -219,9 +241,20 @@ footer a {
         border-top: none;
         display: inline-block;
         font-size: 1.25em;
+        font-family: Geneva, Arial, sans-serif;
+        color: #f6eee4;
     }
     nav li a {
         padding: 0.5em;
+        display: block;
+        color: #f6eee4;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
     }
 
     .grid {
